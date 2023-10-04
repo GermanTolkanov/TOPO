@@ -11,4 +11,11 @@ git commit -m "коментарий" - Коммит файлов из индек
 git branch <branch name> - создание новой ветки
 git checkout <branch name> - переход на ветку
 git branch - просмотр списка веток
+git merge <branch name> - объединение главной и указанной веток
 # Ответы на вопросы
+$ git merge branchB
+Updating d9582d9..147b3df
+Fast-forward
+ LR1/LR1Pamyatka.md | 13 +++++++++----
+ 1 file changed, 9 insertions(+), 4 deletions(-)
+ 
