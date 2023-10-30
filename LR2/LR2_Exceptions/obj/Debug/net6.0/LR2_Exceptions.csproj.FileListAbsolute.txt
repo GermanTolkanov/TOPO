@@ -1,0 +1,15 @@
+E:\Trying coding\С# Unik\LR2\LR2_Exceptions\bin\Debug\net6.0\LR2_Exceptions.exe
+E:\Trying coding\С# Unik\LR2\LR2_Exceptions\bin\Debug\net6.0\LR2_Exceptions.deps.json
+E:\Trying coding\С# Unik\LR2\LR2_Exceptions\bin\Debug\net6.0\LR2_Exceptions.runtimeconfig.json
+E:\Trying coding\С# Unik\LR2\LR2_Exceptions\bin\Debug\net6.0\LR2_Exceptions.dll
+E:\Trying coding\С# Unik\LR2\LR2_Exceptions\bin\Debug\net6.0\LR2_Exceptions.pdb
+E:\Trying coding\С# Unik\LR2\LR2_Exceptions\obj\Debug\net6.0\LR2_Exceptions.csproj.AssemblyReference.cache
+E:\Trying coding\С# Unik\LR2\LR2_Exceptions\obj\Debug\net6.0\LR2_Exceptions.GeneratedMSBuildEditorConfig.editorconfig
+E:\Trying coding\С# Unik\LR2\LR2_Exceptions\obj\Debug\net6.0\LR2_Exceptions.AssemblyInfoInputs.cache
+E:\Trying coding\С# Unik\LR2\LR2_Exceptions\obj\Debug\net6.0\LR2_Exceptions.AssemblyInfo.cs
+E:\Trying coding\С# Unik\LR2\LR2_Exceptions\obj\Debug\net6.0\LR2_Exceptions.csproj.CoreCompileInputs.cache
+E:\Trying coding\С# Unik\LR2\LR2_Exceptions\obj\Debug\net6.0\LR2_Exceptions.dll
+E:\Trying coding\С# Unik\LR2\LR2_Exceptions\obj\Debug\net6.0\refint\LR2_Exceptions.dll
+E:\Trying coding\С# Unik\LR2\LR2_Exceptions\obj\Debug\net6.0\LR2_Exceptions.pdb
+E:\Trying coding\С# Unik\LR2\LR2_Exceptions\obj\Debug\net6.0\LR2_Exceptions.genruntimeconfig.cache
+E:\Trying coding\С# Unik\LR2\LR2_Exceptions\obj\Debug\net6.0\ref\LR2_Exceptions.dll
