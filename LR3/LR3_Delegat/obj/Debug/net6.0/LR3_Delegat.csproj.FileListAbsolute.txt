@@ -1,0 +1,15 @@
+D:\GitTestPO\LR3\LR3_Delegat\bin\Debug\net6.0\LR3_Delegat.exe
+D:\GitTestPO\LR3\LR3_Delegat\bin\Debug\net6.0\LR3_Delegat.deps.json
+D:\GitTestPO\LR3\LR3_Delegat\bin\Debug\net6.0\LR3_Delegat.runtimeconfig.json
+D:\GitTestPO\LR3\LR3_Delegat\bin\Debug\net6.0\LR3_Delegat.dll
+D:\GitTestPO\LR3\LR3_Delegat\bin\Debug\net6.0\LR3_Delegat.pdb
+D:\GitTestPO\LR3\LR3_Delegat\obj\Debug\net6.0\LR3_Delegat.csproj.AssemblyReference.cache
+D:\GitTestPO\LR3\LR3_Delegat\obj\Debug\net6.0\LR3_Delegat.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitTestPO\LR3\LR3_Delegat\obj\Debug\net6.0\LR3_Delegat.AssemblyInfoInputs.cache
+D:\GitTestPO\LR3\LR3_Delegat\obj\Debug\net6.0\LR3_Delegat.AssemblyInfo.cs
+D:\GitTestPO\LR3\LR3_Delegat\obj\Debug\net6.0\LR3_Delegat.csproj.CoreCompileInputs.cache
+D:\GitTestPO\LR3\LR3_Delegat\obj\Debug\net6.0\LR3_Delegat.dll
+D:\GitTestPO\LR3\LR3_Delegat\obj\Debug\net6.0\refint\LR3_Delegat.dll
+D:\GitTestPO\LR3\LR3_Delegat\obj\Debug\net6.0\LR3_Delegat.pdb
+D:\GitTestPO\LR3\LR3_Delegat\obj\Debug\net6.0\LR3_Delegat.genruntimeconfig.cache
+D:\GitTestPO\LR3\LR3_Delegat\obj\Debug\net6.0\ref\LR3_Delegat.dll
