@@ -38,7 +38,7 @@ namespace LR2_Exceptions
                 try
                 {
                     path = Console.ReadLine();
-                    if (path != null) 
+                    if (path != "") 
                     {
                         str = File.ReadAllText(path);
                         break;

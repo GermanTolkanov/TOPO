@@ -13,3 +13,18 @@ E:\Trying coding\С# Unik\LR2\LR2_Exceptions\obj\Debug\net6.0\refint\LR2_Excepti
 E:\Trying coding\С# Unik\LR2\LR2_Exceptions\obj\Debug\net6.0\LR2_Exceptions.pdb
 E:\Trying coding\С# Unik\LR2\LR2_Exceptions\obj\Debug\net6.0\LR2_Exceptions.genruntimeconfig.cache
 E:\Trying coding\С# Unik\LR2\LR2_Exceptions\obj\Debug\net6.0\ref\LR2_Exceptions.dll
+D:\GitTestPO\LR2\LR2_Exceptions\bin\Debug\net6.0\LR2_Exceptions.exe
+D:\GitTestPO\LR2\LR2_Exceptions\bin\Debug\net6.0\LR2_Exceptions.deps.json
+D:\GitTestPO\LR2\LR2_Exceptions\bin\Debug\net6.0\LR2_Exceptions.runtimeconfig.json
+D:\GitTestPO\LR2\LR2_Exceptions\bin\Debug\net6.0\LR2_Exceptions.dll
+D:\GitTestPO\LR2\LR2_Exceptions\bin\Debug\net6.0\LR2_Exceptions.pdb
+D:\GitTestPO\LR2\LR2_Exceptions\obj\Debug\net6.0\LR2_Exceptions.csproj.AssemblyReference.cache
+D:\GitTestPO\LR2\LR2_Exceptions\obj\Debug\net6.0\LR2_Exceptions.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitTestPO\LR2\LR2_Exceptions\obj\Debug\net6.0\LR2_Exceptions.AssemblyInfoInputs.cache
+D:\GitTestPO\LR2\LR2_Exceptions\obj\Debug\net6.0\LR2_Exceptions.AssemblyInfo.cs
+D:\GitTestPO\LR2\LR2_Exceptions\obj\Debug\net6.0\LR2_Exceptions.csproj.CoreCompileInputs.cache
+D:\GitTestPO\LR2\LR2_Exceptions\obj\Debug\net6.0\LR2_Exceptions.dll
+D:\GitTestPO\LR2\LR2_Exceptions\obj\Debug\net6.0\refint\LR2_Exceptions.dll
+D:\GitTestPO\LR2\LR2_Exceptions\obj\Debug\net6.0\LR2_Exceptions.pdb
+D:\GitTestPO\LR2\LR2_Exceptions\obj\Debug\net6.0\LR2_Exceptions.genruntimeconfig.cache
+D:\GitTestPO\LR2\LR2_Exceptions\obj\Debug\net6.0\ref\LR2_Exceptions.dll
