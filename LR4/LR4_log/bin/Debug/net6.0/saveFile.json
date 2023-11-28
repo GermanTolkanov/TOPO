@@ -1,0 +1,16 @@
+{
+  "RegistersList": [
+    {
+      "Time": "2023-11-28T18:54:15.4607007+10:00",
+      "ExcName": "System.IO.FileNotFoundException",
+      "AppName": "System.Private.CoreLib",
+      "StackTrace": "   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)\r\n   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)\r\n   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)\r\n   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)\r\n   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)\r\n   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)\r\n   at System.IO.File.InternalReadAllText(String path, Encoding encoding)\r\n   at System.IO.File.ReadAllText(String path)\r\n   at LR4_ExcLog.Program.GetData() in F:\\\u041A\u041E\u0411 \u0422\u043E\u043B\u043A\u0430\u043D\u043E\u0432\\\u0441\u0435\u043C 5\\\u0422\u041E\u041F\u041E\\LR4\\LR4_log\\Program.cs:line 54"
+    },
+    {
+      "Time": "2023-11-28T18:54:17.1544034+10:00",
+      "ExcName": "LR4_ExcLog.AEqZeroException",
+      "AppName": "LR4_ExcLog",
+      "StackTrace": "   at LR4_ExcLog.Program.Solution(Double[] input) in F:\\\u041A\u041E\u0411 \u0422\u043E\u043B\u043A\u0430\u043D\u043E\u0432\\\u0441\u0435\u043C 5\\\u0422\u041E\u041F\u041E\\LR4\\LR4_log\\Program.cs:line 92\r\n   at LR4_ExcLog.Program.Main(String[] args) in F:\\\u041A\u041E\u0411 \u0422\u043E\u043B\u043A\u0430\u043D\u043E\u0432\\\u0441\u0435\u043C 5\\\u0422\u041E\u041F\u041E\\LR4\\LR4_log\\Program.cs:line 25"
+    }
+  ]
+}

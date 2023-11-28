@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Registers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RegistersList>
+    <Register>
+      <EXCEPTION>2023-11-28T18:54:15.4607007+10:00</EXCEPTION>
+      <ExcName>System.IO.FileNotFoundException</ExcName>
+      <AppName>System.Private.CoreLib</AppName>
+      <StackTrace>   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at LR4_ExcLog.Program.GetData() in F:\КОБ Толканов\сем 5\ТОПО\LR4\LR4_log\Program.cs:line 54</StackTrace>
+    </Register>
+    <Register>
+      <EXCEPTION>2023-11-28T18:54:17.1544034+10:00</EXCEPTION>
+      <ExcName>LR4_ExcLog.AEqZeroException</ExcName>
+      <AppName>LR4_ExcLog</AppName>
+      <StackTrace>   at LR4_ExcLog.Program.Solution(Double[] input) in F:\КОБ Толканов\сем 5\ТОПО\LR4\LR4_log\Program.cs:line 92
+   at LR4_ExcLog.Program.Main(String[] args) in F:\КОБ Толканов\сем 5\ТОПО\LR4\LR4_log\Program.cs:line 25</StackTrace>
+    </Register>
+  </RegistersList>
+</Registers>
