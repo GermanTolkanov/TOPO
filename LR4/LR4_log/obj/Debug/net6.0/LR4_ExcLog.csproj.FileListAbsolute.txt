@@ -13,3 +13,18 @@ F:\КОБ Толканов\сем 5\ТОПО\LR4\LR4_log\obj\Debug\net6.0\refint
 F:\КОБ Толканов\сем 5\ТОПО\LR4\LR4_log\obj\Debug\net6.0\LR4_ExcLog.pdb
 F:\КОБ Толканов\сем 5\ТОПО\LR4\LR4_log\obj\Debug\net6.0\LR4_ExcLog.genruntimeconfig.cache
 F:\КОБ Толканов\сем 5\ТОПО\LR4\LR4_log\obj\Debug\net6.0\ref\LR4_ExcLog.dll
+F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\bin\Debug\net6.0\LR4_ExcLog.exe
+F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\bin\Debug\net6.0\LR4_ExcLog.deps.json
+F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\bin\Debug\net6.0\LR4_ExcLog.runtimeconfig.json
+F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\bin\Debug\net6.0\LR4_ExcLog.dll
+F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\bin\Debug\net6.0\LR4_ExcLog.pdb
+F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\obj\Debug\net6.0\LR4_ExcLog.csproj.AssemblyReference.cache
+F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\obj\Debug\net6.0\LR4_ExcLog.GeneratedMSBuildEditorConfig.editorconfig
+F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\obj\Debug\net6.0\LR4_ExcLog.AssemblyInfoInputs.cache
+F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\obj\Debug\net6.0\LR4_ExcLog.AssemblyInfo.cs
+F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\obj\Debug\net6.0\LR4_ExcLog.csproj.CoreCompileInputs.cache
+F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\obj\Debug\net6.0\LR4_ExcLog.dll
+F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\obj\Debug\net6.0\refint\LR4_ExcLog.dll
+F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\obj\Debug\net6.0\LR4_ExcLog.pdb
+F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\obj\Debug\net6.0\LR4_ExcLog.genruntimeconfig.cache
+F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\obj\Debug\net6.0\ref\LR4_ExcLog.dll

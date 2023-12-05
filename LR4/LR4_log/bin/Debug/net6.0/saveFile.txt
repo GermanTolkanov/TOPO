@@ -1,0 +1,40 @@
+Time - 06.12.2023 0:46:45
+Exception name - System.IO.FileNotFoundException
+Application name - System.Private.CoreLib
+Stack Trace -    at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at LR4_ExcLog.Program.GetData() in F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\Program.cs:line 59)Time - 06.12.2023 0:46:53
+Exception name - LR4_ExcLog.WrongParamsException
+Application name - LR4_ExcLog
+Stack Trace -    at LR4_ExcLog.Program.GetData() in F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\Program.cs:line 79)Time - 06.12.2023 0:47:42
+Exception name - LR4_ExcLog.AEqZeroException
+Application name - LR4_ExcLog
+Stack Trace -    at LR4_ExcLog.Program.Solution(Double[] input) in F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\Program.cs:line 103
+   at LR4_ExcLog.Program.Main(String[] args) in F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\Program.cs:line 26)Time - 06.12.2023 0:50:27
+Exception name - System.IO.FileNotFoundException
+Application name - System.Private.CoreLib
+Stack Trace -    at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at LR4_ExcLog.Program.GetData() in F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\Program.cs:line 59
+Time - 06.12.2023 0:50:46
+Exception name - LR4_ExcLog.AEqZeroException
+Application name - LR4_ExcLog
+Stack Trace -    at LR4_ExcLog.Program.Solution(Double[] input) in F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\Program.cs:line 103
+   at LR4_ExcLog.Program.Main(String[] args) in F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\Program.cs:line 26
+Time - 06.12.2023 0:50:55
+Exception name - LR4_ExcLog.AEqZeroException
+Application name - LR4_ExcLog
+Stack Trace -    at LR4_ExcLog.Program.Solution(Double[] input) in F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\Program.cs:line 103
+   at LR4_ExcLog.Program.Main(String[] args) in F:\КОБТолканов\сем 5\ТОПО\LR4\LR4_log\Program.cs:line 26

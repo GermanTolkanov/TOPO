@@ -1,6 +1,8 @@
-﻿using System.Reflection.Metadata.Ecma335;
+﻿using Microsoft.Win32;
+using System.Reflection.Metadata.Ecma335;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
+using System.Text;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Xml.Serialization;
@@ -11,11 +13,10 @@ namespace LR4_ExcLog
     {
         public delegate void Serialize();
         static Registers registers = new Registers();
-        static public event Serialize serEvent = null;
+        static public event Serialize serEvent;
         static void Main(string[] args)
         {
-            serEvent += SerializeXML;
-            serEvent += SerializeJSON;
+            serEvent += SerializeInvoker;
             double[] input;
             Console.WriteLine("Программа решения квадратного уравнения");
           Begining:
@@ -26,12 +27,16 @@ namespace LR4_ExcLog
             }
             catch(AEqZeroException ex) 
             {
-                registers.RegistersList.Add(new Register(ex));
+                registers.RegistersList.Add(new RegisterXML(ex));
+                registers.RegistersList.Add(new RegisterJSON(ex));
+                registers.RegistersList.Add(new RegisterTXT(ex));
                 Console.WriteLine(ex.Message);
             }
             catch(DSubZeroException ex)
             {
-                registers.RegistersList.Add(new Register(ex));
+                registers.RegistersList.Add(new RegisterXML(ex));
+                registers.RegistersList.Add(new RegisterJSON(ex));
+                registers.RegistersList.Add(new RegisterTXT(ex));
                 Console.WriteLine(ex.Message);
             }
             serEvent.Invoke();
@@ -57,7 +62,9 @@ namespace LR4_ExcLog
                 }
                 catch (FileNotFoundException ex)
                 {
-                    registers.RegistersList.Add(new Register(ex));
+                    registers.RegistersList.Add(new RegisterXML(ex));
+                    registers.RegistersList.Add(new RegisterJSON(ex));
+                    registers.RegistersList.Add(new RegisterTXT(ex));
                     Console.WriteLine(ex.Message);
                     serEvent.Invoke();
                     Console.WriteLine("Введите путь заново");
@@ -79,7 +86,9 @@ namespace LR4_ExcLog
             }
             catch(WrongParamsException ex)
             {
-                registers.RegistersList.Add(new Register(ex));
+                registers.RegistersList.Add(new RegisterXML(ex));
+                registers.RegistersList.Add(new RegisterJSON(ex));
+                registers.RegistersList.Add(new RegisterTXT(ex));
                 Console.WriteLine($"{ex.Message}");
                 serEvent.Invoke();
                 goto Begining;
@@ -129,17 +138,13 @@ namespace LR4_ExcLog
 
             }
         }
-        static void SerializeXML()
+        static public void SerializeInvoker()
         {
-            XmlSerializer xml = new XmlSerializer(typeof(Registers));
-            using FileStream filestream = new FileStream("saveFile.xml", FileMode.OpenOrCreate);
-            xml.Serialize(filestream, registers);
-        }
-        static void SerializeJSON()
-        {
-            var options = new JsonSerializerOptions { WriteIndented = true };
-            using FileStream filestream = new FileStream("saveFile.json", FileMode.Create);
-            JsonSerializer.Serialize(filestream, registers, options);
+            foreach(ISerialize serial in registers.RegistersList)
+            {
+                serial.Serialize();
+            }
+            registers.RegistersList.Clear();
         }
     }
     public class WrongParamsException : Exception
@@ -155,26 +160,87 @@ namespace LR4_ExcLog
         public DSubZeroException(string message) : base(message) { }
     }
     [Serializable]
-    public class Register
+    public class Registers
     {
-        [XmlElement("EXCEPTION")]
+        private List<ISerialize> registersList = new List<ISerialize>();
+
+        public Registers() { }
+        public List<ISerialize> RegistersList { get => registersList; set => registersList = value; }
+    }
+    public class RegisterTXT : ISerialize
+    {
         public DateTime Time { get; set; }
         public string ExcName { get; set; }
         public string AppName { get; set; }
         public string StackTrace { get; set; }
-        public Register(){}
-        public Register(Exception ex)
+        public RegisterTXT(){}
+        public RegisterTXT(Exception ex)
         {
             Time = DateTime.Now;
             AppName = ex.Source;
             StackTrace = ex.StackTrace;
             ExcName = ex.ToString().Split(':')[0];
         }
+        public void Serialize()
+        {
+            string info = $"Time - {Time}\nException name - {ExcName}\nApplication name - {AppName}\nStack Trace - {StackTrace}\n";
+            byte[] buffer = Encoding.Default.GetBytes(info);
+            using (FileStream filestream = new FileStream("saveFile.txt", FileMode.Append, FileAccess.Write))
+            {
+                filestream.Write(buffer, 0, buffer.Length);
+                filestream.Flush();
+                filestream.Close();
+            }
+        }
     }
     [Serializable]
-    public class Registers
+    public class RegisterXML : ISerialize
     {
-        public Registers() { }
-        public List<Register> RegistersList { get; set; } = new List<Register>();
+        [XmlElement("EXCEPTION")]
+        public DateTime Time { get; set; }
+        public string ExcName { get; set; }
+        public string AppName { get; set; }
+        public string StackTrace { get; set; }
+        public RegisterXML() { }
+        public RegisterXML(Exception ex)
+        {
+            Time = DateTime.Now;
+            AppName = ex.Source;
+            StackTrace = ex.StackTrace;
+            ExcName = ex.ToString().Split(':')[0];
+        }
+        public void Serialize()
+        {
+            XmlSerializer xml = new XmlSerializer(typeof(RegisterXML));
+            using FileStream filestream = new FileStream("saveFile.xml", FileMode.Append);
+            xml.Serialize(filestream, this);
+        }
+    }
+    [Serializable]
+    public class RegisterJSON: ISerialize
+    {
+        [XmlElement("EXCEPTION")]
+        public DateTime Time { get; set; }
+        public string ExcName { get; set; }
+        public string AppName { get; set; }
+        public string StackTrace { get; set; }
+        public RegisterJSON() { }
+        public RegisterJSON(Exception ex)
+        {
+            Time = DateTime.Now;
+            AppName = ex.Source;
+            StackTrace = ex.StackTrace;
+            ExcName = ex.ToString().Split(':')[0];
+        }
+        public void Serialize()
+        {
+            var options = new JsonSerializerOptions { WriteIndented = true };
+            using FileStream filestream = new FileStream("saveFile.json", FileMode.Append);
+            JsonSerializer.Serialize(filestream, this, options);
+        }
+    }
+    public interface ISerialize
+    {
+        public void Serialize();
     }
 }
